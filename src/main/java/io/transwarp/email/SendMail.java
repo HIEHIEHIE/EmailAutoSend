@@ -13,14 +13,14 @@ public class SendMail {
             javaMailSender.setPort(587);
             javaMailSender.setHost("smtp.qq.com");
             //自己的邮箱 需要去开通邮箱协议
-            javaMailSender.setUsername("wlinfan@foxmail.com");
+            javaMailSender.setUsername("***");
             javaMailSender.setPassword("mwyfgpfnhmnrgecd");
             //邮件内容
             message.setSubject("test");
             message.setText(content);
             //发送给谁
-            message.setTo("linfan.wang@transwarp.io");
-            message.setFrom("wlinfan@foxmail.com");
+            message.setTo("***");
+            message.setFrom("***");
             javaMailSender.send(message);
             System.out.println("发送成功");
         }).start();
